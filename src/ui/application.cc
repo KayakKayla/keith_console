@@ -1,7 +1,10 @@
+#include "application.h"
+
+#include <QCoreApplication>
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
 
-int main(int argc, char *argv[])
+int Application::run(int argc, char *argv[])
 {
     QGuiApplication app(argc, argv);
 
@@ -15,4 +18,10 @@ int main(int argc, char *argv[])
     engine.loadFromModule("keith_console", "Main");
 
     return app.exec();
+}
+
+int main(int argc, char *argv[])
+{
+    Application application;
+    return application.run(argc, argv);
 }
