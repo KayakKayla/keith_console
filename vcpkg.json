@@ -1,0 +1,13 @@
+{
+  "name": "keith-console",
+  "version": "0.1.0",
+  "builtin-baseline": "8f61b1d6cdf726c34da561ec95bf2c98b5eb2d40",
+  "dependencies": [
+    "qtbase",
+    "qtdeclarative",
+    "libvterm",
+    "spdlog",
+    "tracy",
+    "gtest"
+  ]
+}
