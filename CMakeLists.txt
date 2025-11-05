@@ -11,6 +11,8 @@ qt_standard_project_setup(REQUIRES 6.8)
 add_subdirectory(src)
 
 add_subdirectory(qml)
+enable_testing()
+add_subdirectory(tests)
 
 include(GNUInstallDirs)
 install(TARGETS appkeith_console

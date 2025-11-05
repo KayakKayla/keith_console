@@ -1,10 +1,12 @@
 qt_add_executable(appkeith_console
     application.cc
+    plain_text_surface.cc
 )
 
 target_include_directories(appkeith_console
     PRIVATE
         ${CMAKE_CURRENT_SOURCE_DIR}
+        ${CMAKE_CURRENT_SOURCE_DIR}/..
 )
 
 set_target_properties(appkeith_console PROPERTIES
@@ -18,5 +20,9 @@ set_target_properties(appkeith_console PROPERTIES
 )
 
 target_link_libraries(appkeith_console
-    PRIVATE Qt6::Quick
+    PRIVATE
+        Qt6::Quick
+        Qt6::Gui
+        Qt6::Qml
+        terminal_core
 )
