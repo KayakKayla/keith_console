@@ -1,4 +1,5 @@
-#pragma once
+#ifndef TERMINAL_CONFIG_LOADER_H
+#define TERMINAL_CONFIG_LOADER_H
 
 #include <QFileSystemWatcher>
 #include <QObject>
@@ -26,3 +27,4 @@ private:
     std::unique_ptr<QFileSystemWatcher> m_watcher;
     QString m_activePath;
 };
+#endif

@@ -1,4 +1,5 @@
-#pragma once
+#ifndef TERMINAL_BRIDGE_H
+#define TERMINAL_BRIDGE_H
 
 #include <QObject>
 #include <QVariantMap>
@@ -37,3 +38,4 @@ private:
     std::unique_ptr<TerminalSession> m_session;
     std::unique_ptr<ConfigLoader> m_loader;
 };
+#endif
